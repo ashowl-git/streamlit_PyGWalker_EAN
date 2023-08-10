@@ -44,7 +44,7 @@ def main():
         st.subheader("Garbage In !, Garbage Out !")
         # Form
         with st.form("upload_form"):
-            data_file = st.file_uploader("시각화를 원하는 데이터 파일을 끌어다가 넣는것이 편할것임.",type=["csv","txt","xlsx"])
+            data_file = st.file_uploader("시각화를 원하는 데이터 파일을 불러오기.",type=["csv","txt","xlsx"])
             submitted = st.form_submit_button("Submit")
 
         if submitted:
